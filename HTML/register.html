@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VisualSkill - Register</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="container nav-row">
+            <a href="index.html" class="logo">
+                <img src="../images/Logo.png" alt="VisualSkill logo">
+                <span>VisualSkill</span>
+            </a>
+
+            <nav class="menu">
+                <a href="index.html">Home</a>
+                <a href="career.html">Career</a>
+                <a href="course.html">Course</a>
+                <a href="about.html">About Us</a>
+                <a href="register.html" class="join-link active">Register</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="signup-area">
+            <div class="container signup-wrap">
+                <div class="signup-copy">
+                    <p class="small-title">Learning registration</p>
+                    <h1>Start your coding journey at VisualSkill.</h1>
+                    <p>
+                        Fill in the short form below to create an account and start learning.
+                        You can explore courses after your account is created.
+                    </p>
+
+                    <div class="terminal-box">
+                        <span>signup.status</span>
+                        <p>&gt; create account</p>
+                        <p>&gt; verify profile</p>
+                        <p>&gt; start learning</p>
+                    </div>
+                </div>
+
+                <form class="signup-form">
+                    <div class="field">
+                        <input type="text" id="name" name="name" placeholder="Full Name">
+                        <small class="error-text" id="name-error"></small>
+                    </div>
+
+                    <div class="field">
+                        <input type="text" id="username" name="username" placeholder="Username">
+                        <small class="error-text" id="username-error"></small>
+                    </div>
+
+                    <div class="field-row">
+                        <label for="birth-date">Date of Birth:</label>
+                        <div class="field">
+                            <input type="date" id="birth-date" name="birth-date">
+                            <small class="error-text" id="birth-date-error"></small>
+                        </div>
+                    </div>
+
+                    <div class="field-row gender-row">
+                        <span>Gender:</span>
+                        <label class="radio-item">
+                            <input type="radio" name="gender" value="Male">
+                            <span>Male</span>
+                        </label>
+                        <label class="radio-item">
+                            <input type="radio" name="gender" value="Female" checked>
+                            <span>Female</span>
+                        </label>
+                    </div>
+
+                    <div class="field">
+                        <input type="email" id="email" name="email" placeholder="Email">
+                        <small class="error-text" id="email-error"></small>
+                    </div>
+
+                    <div class="field">
+                        <input type="tel" id="phone" name="phone" placeholder="Phone" inputmode="tel">
+                        <small class="error-text" id="phone-error"></small>
+                    </div>
+
+                    <div class="field">
+                        <input type="password" id="password" name="password" placeholder="Password">
+                        <small class="error-text" id="password-error"></small>
+                    </div>
+
+                    <div class="field">
+                        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password">
+                        <small class="error-text" id="confirm-password-error"></small>
+                    </div>
+
+                    <div class="field">
+                        <textarea id="address" name="address" placeholder="Address"></textarea>
+                        <small class="error-text" id="address-error"></small>
+                    </div>
+
+                    <label class="check-line" for="terms">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <span>I agree to the VisualSkill terms of agreement and learning policy.</span>
+                        <small class="error-text terms-error" id="terms-error"></small>
+                    </label>
+
+                    <button type="submit" class="submit-btn">Create Account</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-row">
+            <p>&copy; 2026 VisualSkill by SkillSkill. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../JavaScript/script.js"></script>
+</body>
+</html>

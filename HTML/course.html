@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VisualSkill - Course</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="container nav-row">
+            <a href="index.html" class="logo">
+                <img src="../images/Logo.png" alt="VisualSkill logo">
+                <span>VisualSkill</span>
+            </a>
+
+            <nav class="menu">
+                <a href="index.html">Home</a>
+                <a href="career.html">Career</a>
+                <a href="course.html" class="active">Course</a>
+                <a href="about.html">About Us</a>
+                <a href="register.html" class="join-link">Register</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-head">
+            <div class="container page-head-wrap">
+                <div>
+                    <p class="small-title">Coding courses</p>
+                    <h1>Choose a coding class that matches your learning level.</h1>
+                    <p>
+                        Every course is designed step by step, from web fundamentals to projects
+                        you can add to your portfolio.
+                    </p>
+                </div>
+                <div class="terminal-box">
+                    <span>course-row.json</span>
+                    <p>{ "level": "beginner" }</p>
+                    <p>{ "focus": "project" }</p>
+                    <p>{ "layout": "responsive" }</p>
+                </div>
+            </div>
+        </section>
+        <section class="search-area">
+            <div class="container">
+                <form class="course-form">
+                    <input type="text" name="keyword" placeholder="Course">
+                    <select name="type">
+                        <option value="" selected disabled>Type</option>
+                        <option value="html-css">HTML CSS</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="responsive">Responsive Design</option>
+                        <option value="portfolio">Portfolio Website</option>
+                        <option value="other">Other...</option>
+                    </select>
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="filter-list course-filter-list">
+                    <button type="button" data-filter="all">All</button>
+                    <button type="button" data-filter="html-css">HTML CSS</button>
+                    <button type="button" data-filter="javascript">JavaScript</button>
+                    <button type="button" data-filter="portfolio">Project</button>
+                </div>
+
+                <div class="course-grid">
+                    <article class="course-box large" data-category="html-css">
+                        <img class="course-img" src="../images/ui.jpg" alt="Student coding a website layout">
+                        <span>HTML CSS</span>
+                        <h3>Web Layout Basic</h3>
+                        <p>Learn HTML structure, semantic tags, the box model, flexbox, grid, and responsive layout.</p>
+                        <a href="register.html" class="text-action">Enroll Course</a>
+                    </article>
+
+                    <article class="course-box large" data-category="responsive">
+                        <img class="course-img" src="../images/ux.jpg" alt="Responsive web development workspace">
+                        <span>CSS</span>
+                        <h3>Responsive Design</h3>
+                        <p>Create pages that stay polished on desktop, tablet, and mobile screens.</p>
+                        <a href="register.html" class="text-action">Enroll Course</a>
+                    </article>
+
+                    <article class="course-box large" data-category="javascript">
+                        <img class="course-img" src="../images/website.jpg" alt="Interactive interface implementation">
+                        <span>JavaScript</span>
+                        <h3>Interactive Website</h3>
+                        <p>Understand events, the DOM, form validation, and simple website interactions.</p>
+                        <a href="register.html" class="text-action">Enroll Course</a>
+                    </article>
+
+                    <article class="course-box large" data-category="portfolio">
+                        <img class="course-img" src="../images/porto.jpg" alt="Portfolio website project setup">
+                        <span>Project</span>
+                        <h3>Portfolio Website</h3>
+                        <p>Combine HTML, CSS, and JavaScript into a personal portfolio website.</p>
+                        <a href="register.html" class="text-action">Enroll Course</a>
+                    </article>
+
+                    <article class="course-box large" data-category="other">
+                        <img class="course-img" src="../images/coding.jpg" alt="Landing page coding project">
+                        <span>UI Code</span>
+                        <h3>Landing Page Coding</h3>
+                        <p>Build modern landing pages with clear sections and user-friendly structure.</p>
+                        <a href="register.html" class="text-action">Enroll Course</a>
+                    </article>
+
+                    <article class="course-box large" data-category="other">
+                        <img class="course-img" src="../images/compo.jpg" alt="Mini web component project">
+                        <span>Practice</span>
+                        <h3>Mini Project Sprint</h3>
+                        <p>Practice building web components such as cards, navbars, forms, and pricing blocks.</p>
+                        <a href="register.html" class="text-action">Enroll Course</a>
+                    </article>
+                </div>
+
+                <p class="empty-text course-empty-text">No courses found. Try another keyword or type.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-row">
+            <p>&copy; 2026 VisualSkill by SkillSkill. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../JavaScript/script.js"></script>
+</body>
+</html>
